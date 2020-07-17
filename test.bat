@@ -1,0 +1,3 @@
+@@echo off
+
+go test github.com/tyahha/learning-golang-with-tdd/...
