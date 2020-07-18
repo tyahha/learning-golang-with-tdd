@@ -102,7 +102,7 @@ func assertError(t *testing.T, got, want error) {
 func assertDefinition(t *testing.T, dictionary Dictionary, word, definition string) {
 	t.Helper()
 
-	got, err := dictionary.Search("test")
+	got, err := dictionary.Search(word)
 	if err != nil {
 		t.Fatal("should find added word:", err)
 	}
